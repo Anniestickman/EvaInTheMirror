@@ -2,3 +2,5 @@ baseURL = 'https://example.org/'
 locale = 'en-us'
 title = 'Eva In The Mirror'
 theme = 'ananke'
+[params]
+  customCSS = ["css/custom.css"]
