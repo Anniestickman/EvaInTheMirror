@@ -1,28 +1,34 @@
 @import url('https://fonts.googleapis.com/css2?family=Castoro+Titling&family=Pinyon+Script&family=EB+Garamond&display=swap');
 
-:root {
-    --bg-color: #F3F4D7;     /* Parchment */
-    --text-color: #32161F;   /* Dark Chocolate */
-    --header-color: #243010; /* Forest Green */
-    --accent-color: #64445B; /* Vintage Purple */
+/* This forces the background and text colors everywhere */
+html, body, .bg-white, .bg-near-white, main, section, article {
+    background-color: #F3F4D7 !important;
+    color: #32161F !important;
+    font-family: 'EB Garamond', serif !important;
 }
 
-body {
-    background-color: var(--bg-color);
-    color: var(--text-color);
-    font-family: 'EB Garamond', serif; 
-    font-size: 1.3rem;
+/* This fixes the header/banner area */
+header, .pv4, .pv5, .bg-black-60 {
+    background-color: #243010 !important;
 }
 
-h1, h2, h3 {
-    font-family: 'Castoro Titling', serif;
-    color: var(--header-color);
-}
-
-/* This makes your site title look like beautiful handwriting */
-.site-title, .nav-link, header a, .f2 {
+/* This fixes the Title and Navigation font */
+.site-title, .nav-link, header a, h1, .f1, .f2, .f-headline {
     font-family: 'Pinyon Script', cursive !important;
-    font-size: 3.5rem !important; 
-    color: var(--header-color) !important;
+    color: #F3F4D7 !important; /* Making the script creamy on the green background */
     text-transform: none !important;
+    letter-spacing: normal !important;
+}
+
+/* This fixes your blog post titles */
+.f3, h2, h3 {
+    font-family: 'Castoro Titling', serif !important;
+    color: #243010 !important;
+}
+
+/* This fixes the "read more" button */
+.ba {
+    border-color: #64445B !important;
+    color: #64445B !important;
+    font-family: 'EB Garamond', serif !important;
 }
