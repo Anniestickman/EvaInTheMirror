@@ -1,34 +1,49 @@
 @import url('https://fonts.googleapis.com/css2?family=Castoro+Titling&family=Pinyon+Script&family=EB+Garamond&display=swap');
 
-/* This forces the background and text colors everywhere */
+/* Main Background - Parchment (#F3F4D7) */
+/* Main Text - Deep Plum Red (#32161F) */
 html, body, .bg-white, .bg-near-white, main, section, article {
     background-color: #F3F4D7 !important;
     color: #32161F !important;
     font-family: 'EB Garamond', serif !important;
 }
 
-/* This fixes the header/banner area */
+/* Header Banner - Forest Green (#243010) */
 header, .pv4, .pv5, .bg-black-60 {
     background-color: #243010 !important;
 }
 
-/* This fixes the Title and Navigation font */
+/* Page Titles/Nav - Parchment script on Green */
 .site-title, .nav-link, header a, h1, .f1, .f2, .f-headline {
     font-family: 'Pinyon Script', cursive !important;
-    color: #F3F4D7 !important; /* Making the script creamy on the green background */
+    color: #F3F4D7 !important;
     text-transform: none !important;
     letter-spacing: normal !important;
 }
 
-/* This fixes your blog post titles */
-.f3, h2, h3 {
+/* Blog Post Titles - Deep Plum Red (#32161F) */
+.f3, h2, h3, .link {
     font-family: 'Castoro Titling', serif !important;
-    color: #243010 !important;
+    color: #32161F !important;
+    text-decoration: none !important;
 }
 
-/* This fixes the "read more" button */
-.ba {
-    border-color: #64445B !important;
+/* Post Summaries/Dates - Vintage Purple (#64445B) */
+.f6, .db, .post-meta {
     color: #64445B !important;
+}
+
+/* "Read More" Button - Slate Blue (#4C5F64) */
+.ba {
+    border-color: #4C5F64 !important;
+    color: #4C5F64 !important;
+    background-color: transparent !important;
     font-family: 'EB Garamond', serif !important;
+    border-width: 2px !important;
+}
+
+/* Hover effect for button - Changes to Forest Green */
+.ba:hover {
+    border-color: #243010 !important;
+    color: #243010 !important;
 }
