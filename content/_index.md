@@ -1,4 +1,4 @@
----
+![About Me Image](/images/IMG_6424.jpeg)---
 title: "About Me"
 ---
 
