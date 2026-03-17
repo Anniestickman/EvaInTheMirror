@@ -1,5 +1,7 @@
-+++
-date = '2026-03-16T19:10:17-05:00'
-draft = true
-title = 'My First Post'
-+++
+---
+title: "My First Blog Post!!!"
+date: 2026-03-16
+draft: false
+---
+
+Hello! This is the very first post on my new blog. I am finally up and running!
