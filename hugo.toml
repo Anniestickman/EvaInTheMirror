@@ -1,6 +1,7 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://eva-in-the-mirror.netlify.app/'
 locale = 'en-us'
 title = 'Eva In The Mirror'
 theme = 'ananke'
+
 [params]
   custom_css = ["/css/custom.css"]
