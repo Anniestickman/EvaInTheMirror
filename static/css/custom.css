@@ -1,49 +1,51 @@
 @import url('https://fonts.googleapis.com/css2?family=Castoro+Titling&family=Pinyon+Script&family=EB+Garamond&display=swap');
 
-/* Main Background - Parchment (#F3F4D7) */
-/* Main Text - Deep Plum Red (#32161F) */
-html, body, .bg-white, .bg-near-white, main, section, article {
+/* 1. FORCE THE BACKGROUND TO PARCHMENT EVERYWHERE */
+/* This kills the black background and the bright white */
+html, body, .bg-white, .bg-near-white, main, section, article, header, .bg-black-60 {
     background-color: #F3F4D7 !important;
-    color: #32161F !important;
+    color: #32161F !important; /* Deep Plum Red Text */
     font-family: 'EB Garamond', serif !important;
 }
 
-/* Header Banner - Forest Green (#243010) */
-header, .pv4, .pv5, .bg-black-60 {
-    background-color: #243010 !important;
+/* 2. HEADER AREA */
+/* We'll make the header Parchment too, so the whole page flows together */
+header {
+    border-bottom: 2px solid #243010 !important; /* A thin Forest Green line for class */
+    padding-bottom: 2rem !important;
 }
 
-/* Page Titles/Nav - Parchment script on Green */
+/* 3. THE SCRIPT TITLES */
+/* Deep Plum Red script on Parchment background */
 .site-title, .nav-link, header a, h1, .f1, .f2, .f-headline {
     font-family: 'Pinyon Script', cursive !important;
-    color: #F3F4D7 !important;
+    color: #32161F !important; 
     text-transform: none !important;
     letter-spacing: normal !important;
+    font-size: 4rem !important; /* Making it big and bold */
 }
 
-/* Blog Post Titles - Deep Plum Red (#32161F) */
+/* 4. BLOG POST TITLES */
+/* Forest Green for the titles to give that 'Academy' feel */
 .f3, h2, h3, .link {
     font-family: 'Castoro Titling', serif !important;
-    color: #32161F !important;
+    color: #243010 !important;
     text-decoration: none !important;
 }
 
-/* Post Summaries/Dates - Vintage Purple (#64445B) */
-.f6, .db, .post-meta {
-    color: #64445B !important;
-}
-
-/* "Read More" Button - Slate Blue (#4C5F64) */
-.ba {
-    border-color: #4C5F64 !important;
-    color: #4C5F64 !important;
+/* 5. REMOVE THE DARK GREEN POST BLOCKS */
+/* This ensures your posts don't have that dark background box */
+.pa3, .pa4, .bg-dark-green, [style*="background-color"] {
     background-color: transparent !important;
-    font-family: 'EB Garamond', serif !important;
-    border-width: 2px !important;
 }
 
-/* Hover effect for button - Changes to Forest Green */
-.ba:hover {
+/* 6. THE READ MORE BUTTON */
+/* Simple and elegant Forest Green outline */
+.ba {
     border-color: #243010 !important;
     color: #243010 !important;
+    background-color: transparent !important;
+    font-family: 'EB Garamond', serif !important;
+    text-transform: lowercase !important;
+    font-style: italic !important;
 }
