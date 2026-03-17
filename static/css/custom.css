@@ -1,58 +1,52 @@
 @import url('https://fonts.googleapis.com/css2?family=Castoro+Titling&family=Pinyon+Script&family=EB+Garamond&display=swap');
 
-/* 1. THE CANVAS - Clean Antique White */
-html, body, main {
+/* 1. KILL THE BLACK & WHITE - Force Antique White Background Everywhere */
+html, body, main, article, section, .bg-black-60, .cover, .bg-near-white, .bg-white {
     background-color: #FFEDD8 !important;
-    color: #250902 !important;
+    background-image: none !important; /* This kills any hidden dark images */
+    color: #250902 !important; /* Rich Mahogany Text */
     font-family: 'EB Garamond', serif !important;
-    line-height: 1.6;
 }
 
-/* 2. THE HEADER - Clean and Airy */
-/* We remove the big colored box and just use a nice border */
-header, .bg-black-60 {
-    background-color: transparent !important;
-    border-top: 8px solid #8F2D56 !important; /* A "pop" of berry at the very top */
-    padding: 3rem 0 !important;
+/* 2. THE TOP SECTION - Solid Vintage Berry (No Black Tints!) */
+header, .pv4, .pv5 {
+    background-color: #8F2D56 !important;
+    background-image: none !important;
+    border-bottom: 6px solid #250902 !important; /* Thick Mahogany line */
 }
 
-/* 3. SITE TITLE - Small & Elegant in the corner */
-.site-title, header a.f2 {
+/* 3. SITE TITLE (Eva In The Mirror) - Small, Cursive, Antique White */
+.site-title, header a.f2, .f3.fw2.tracked {
     font-family: 'Pinyon Script', cursive !important;
-    color: #8F2D56 !important; /* Berry colored ink */
-    font-size: 1.8rem !important;
-    text-decoration: none !important;
-    padding-left: 20px !important;
+    color: #FFEDD8 !important; 
+    font-size: 1.8rem !important; /* Small and elegant */
+    text-transform: none !important;
+    letter-spacing: normal !important;
 }
 
-/* 4. MAIN PAGE TITLES (Like "About Me") */
-h1, .f1 {
+/* 4. MAIN TITLES (About Me) - Antique White Script on Berry Background */
+h1, .f1, .f-headline {
     font-family: 'Pinyon Script', cursive !important;
-    color: #6B0F1A !important; /* Black Cherry */
-    font-size: 4rem !important;
-    text-align: center !important;
-    margin-top: 2rem !important;
+    color: #FFEDD8 !important;
+    text-transform: none !important;
 }
 
-/* 5. POST TITLES - Simple and Classic */
+/* 5. POST TITLES - Black Cherry (#6B0F1A) */
 h2, h3, .f3, .link {
     font-family: 'Castoro Titling', serif !important;
-    color: #250902 !important; /* Rich Mahogany */
-    text-align: center !important;
-    text-transform: uppercase !important;
-    letter-spacing: 2px !important;
+    color: #6B0F1A !important;
+    text-decoration: none !important;
 }
 
-/* 6. BUTTON - The Amethyst Accent */
+/* 6. BUTTONS & ACCENTS - Dark Amethyst (#3C1642) */
 .ba {
-    border: 1px solid #3C1642 !important;
+    border-color: #3C1642 !important;
     color: #3C1642 !important;
-    text-transform: lowercase !important;
-    font-style: italic !important;
-    padding: 10px 20px !important;
+    background-color: transparent !important;
 }
 
-/* 7. REMOVE ALL THEME BOXES */
-.pa3, .pa4, section, article {
-    background-color: transparent !important;
+/* 7. THE FOOTER - Rich Mahogany (#250902) */
+footer, .bg-black {
+    background-color: #250902 !important;
+    color: #FFEDD8 !important;
 }
