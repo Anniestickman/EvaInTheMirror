@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Castoro+Titling&family=Pinyon+Script&family=EB+Garamond&display=swap');
+
+:root {
+    --bg-color: #F3F4D7;     /* Parchment */
+    --text-color: #32161F;   /* Dark Chocolate */
+    --header-color: #243010; /* Forest Green */
+    --accent-color: #64445B; /* Vintage Purple */
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: 'EB Garamond', serif; 
+    font-size: 1.3rem;
+}
+
+h1, h2, h3 {
+    font-family: 'Castoro Titling', serif;
+    color: var(--header-color);
+}
+
+/* This makes your site title look like beautiful handwriting */
+.site-title, .nav-link, header a, .f2 {
+    font-family: 'Pinyon Script', cursive !important;
+    font-size: 3.5rem !important; 
+    color: var(--header-color) !important;
+    text-transform: none !important;
+}
