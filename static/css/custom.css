@@ -1,51 +1,53 @@
 @import url('https://fonts.googleapis.com/css2?family=Castoro+Titling&family=Pinyon+Script&family=EB+Garamond&display=swap');
 
-/* 1. FORCE THE BACKGROUND TO PARCHMENT EVERYWHERE */
-/* This kills the black background and the bright white */
+/* 1. THE CANVAS - Antique White Background (#FFEDD8) */
+/* This removes all black and white blocks */
 html, body, .bg-white, .bg-near-white, main, section, article, header, .bg-black-60 {
-    background-color: #F3F4D7 !important;
-    color: #32161F !important; /* Deep Plum Red Text */
+    background-color: #FFEDD8 !important;
+    color: #250902 !important; /* Rich Mahogany for main text */
     font-family: 'EB Garamond', serif !important;
 }
 
-/* 2. HEADER AREA */
-/* We'll make the header Parchment too, so the whole page flows together */
+/* 2. THE HEADER AREA */
+/* No more black bar! Just a clean, open top section */
 header {
-    border-bottom: 2px solid #243010 !important; /* A thin Forest Green line for class */
+    border-bottom: 1px solid #8F2D56 !important; /* Elegant Vintage Berry line */
     padding-bottom: 2rem !important;
 }
 
-/* 3. THE SCRIPT TITLES */
-/* Deep Plum Red script on Parchment background */
+/* 3. YOUR NAME & NAV - Pinyon Script in Black Cherry (#6B0F1A) */
 .site-title, .nav-link, header a, h1, .f1, .f2, .f-headline {
     font-family: 'Pinyon Script', cursive !important;
-    color: #32161F !important; 
+    color: #6B0F1A !important; 
     text-transform: none !important;
     letter-spacing: normal !important;
-    font-size: 4rem !important; /* Making it big and bold */
+    font-size: 3.8rem !important;
 }
 
-/* 4. BLOG POST TITLES */
-/* Forest Green for the titles to give that 'Academy' feel */
+/* 4. BLOG POST TITLES - Castoro Titling in Vintage Berry (#8F2D56) */
 .f3, h2, h3, .link {
     font-family: 'Castoro Titling', serif !important;
-    color: #243010 !important;
+    color: #8F2D56 !important;
     text-decoration: none !important;
 }
 
-/* 5. REMOVE THE DARK GREEN POST BLOCKS */
-/* This ensures your posts don't have that dark background box */
-.pa3, .pa4, .bg-dark-green, [style*="background-color"] {
-    background-color: transparent !important;
+/* 5. DATES & TINY TEXT - Dark Amethyst (#3C1642) */
+.f6, .db, .post-meta {
+    color: #3C1642 !important;
+    font-style: italic !important;
 }
 
-/* 6. THE READ MORE BUTTON */
-/* Simple and elegant Forest Green outline */
+/* 6. THE "READ MORE" BUTTON - Mahogany Outline */
 .ba {
-    border-color: #243010 !important;
-    color: #243010 !important;
+    border-color: #250902 !important;
+    color: #250902 !important;
     background-color: transparent !important;
     font-family: 'EB Garamond', serif !important;
-    text-transform: lowercase !important;
-    font-style: italic !important;
+    border-radius: 4px !important;
+}
+
+/* 7. FIXING THE POST BLOCKS */
+/* This forces the dark green/black boxes to disappear */
+.pa3, .pa4, [class*="bg-"], [style*="background-color"] {
+    background-color: transparent !important;
 }
