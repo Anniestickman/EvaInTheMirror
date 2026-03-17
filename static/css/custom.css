@@ -1,56 +1,66 @@
 @import url('https://fonts.googleapis.com/css2?family=Castoro+Titling&family=Pinyon+Script&family=EB+Garamond&display=swap');
 
-/* 1. THE MAIN CONTENT AREA - Antique White (#FFEDD8) */
-html, body, main, section, article, .bg-white, .bg-near-white {
+/* 1. GLOBAL SETTINGS & MAIN BACKGROUND - Antique White (#FFEDD8) */
+html, body, main, section, article {
     background-color: #FFEDD8 !important;
-    color: #250902 !important; /* Rich Mahogany Text */
+    color: #250902 !important; /* Rich Mahogany for main text */
     font-family: 'EB Garamond', serif !important;
 }
 
 /* 2. THE HEADER - Vintage Berry (#8F2D56) */
-/* This adds color back to the top of your site */
 header, .bg-black-60 {
     background-color: #8F2D56 !important;
-    padding-top: 3rem !important;
-    padding-bottom: 3rem !important;
-    border-bottom: 4px solid #6B0F1A !important; /* Black Cherry accent line */
+    padding: 2rem 0 !important;
+    border-bottom: 5px solid #250902 !important; /* Rich Mahogany bottom border */
 }
 
-/* 3. HEADER TEXT - Antique White script on the Berry background */
-.site-title, .nav-link, header a, .f1, .f2 {
+/* 3. SITE TITLE (Top Left) - Smaller, Pinyon Script, Antique White */
+.site-title, header a.f2, .f3.fw2.tracked {
     font-family: 'Pinyon Script', cursive !important;
     color: #FFEDD8 !important; 
+    font-size: 2rem !important; /* Made smaller as requested */
     text-transform: none !important;
     letter-spacing: normal !important;
-    font-size: 3.5rem !important;
-    text-shadow: 1px 1px 2px rgba(0,0,0,0.1) !important;
 }
 
-/* 4. BLOG POST TITLES - Black Cherry (#6B0F1A) */
-.f3, h2, h3, .link {
+/* 4. MAIN TITLES - Pinyon Script in Antique White on the Berry background */
+h1, .f1, .f-headline {
+    font-family: 'Pinyon Script', cursive !important;
+    color: #FFEDD8 !important;
+    text-transform: none !important;
+    letter-spacing: normal !important;
+}
+
+/* 5. BLOG POST TITLES & LINKS - Black Cherry (#6B0F1A) */
+h2, h3, .link, .f3 {
     font-family: 'Castoro Titling', serif !important;
     color: #6B0F1A !important;
     text-decoration: none !important;
 }
 
-/* 5. THE FOOTER - Rich Mahogany (#250902) */
-/* This adds a dark, sophisticated anchor to the bottom of the page */
-footer {
-    background-color: #250902 !important;
-    color: #FFEDD8 !important;
-    padding: 3rem 0 !important;
-}
-
-/* 6. BUTTONS & ACCENTS */
-.ba {
-    border-color: #8F2D56 !important;
-    color: #8F2D56 !important;
-    background-color: transparent !important;
-    font-family: 'EB Garamond', serif !important;
+/* 6. SUBTEXT & DATES - Dark Amethyst (#3C1642) */
+/* Using Amethyst here adds that subtle, dark purple depth to the small details */
+.f6, .db, .post-meta, .post-date {
+    color: #3C1642 !important;
     font-style: italic !important;
 }
 
-/* 7. REMOVE CLASHING THEME BOXES */
+/* 7. THE FOOTER - Rich Mahogany (#250902) */
+/* This brings in the darkest color to anchor the bottom of the page */
+footer {
+    background-color: #250902 !important;
+    color: #FFEDD8 !important;
+}
+
+/* 8. BUTTONS - Dark Amethyst Border (#3C1642) */
+.ba {
+    border-color: #3C1642 !important;
+    color: #3C1642 !important;
+    background-color: transparent !important;
+    font-family: 'EB Garamond', serif !important;
+}
+
+/* 9. FIXING THEME OVERLAYS */
 .pa3, .pa4, [class*="bg-"] {
     background-color: transparent !important;
 }
